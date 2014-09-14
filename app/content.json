@@ -1,0 +1,409 @@
+{
+	"website": [
+		{
+			"title": "404",
+			"slug": "#/404",
+			"noTab": true,
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Page not found!",
+					"copy": "Why don't you <a href=\"#/home/\">go home</a>?"
+				}
+			]
+		},
+		{
+			"title": "Home",
+			"slug": "#/home",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Hello!",
+					"copy": "My name is Alex Bergin. I'm a web designer and developer living in Los Angeles.<br /><br />This is my work."
+				}
+			]
+		},
+		{
+			"title": "Info",
+			"slug": "#/info",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Info",
+					"copy": "My curriculum vitae &amp; contact information: coming soon."
+				}
+			]
+		},
+		{
+			"title": "CSS A - Z",
+			"slug": "#/cssaz",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "CSS A - Z",
+					"copy": "An animated illustration every day for 26 days in pure CSS &amp; HTML."
+				},
+				{
+					"type": "project-detail",
+					"url": "http://cssaz.tumblr.com/",
+					"date": {
+						"start": "April 2014",
+						"finish": "May 2014"
+					},
+					"mediums": [ "Web" , "Digital" , "Animation" , "Illustration"  ]
+				},
+				{
+					"type": "image-card",
+					"src": "/images/cssaz-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/cssaz-2.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/cssaz-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/cssaz-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/cssaz-5.jpg"
+				}
+			]
+		},
+		{
+			"title": "Fortnite",
+			"slug": "#/fortnite",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Fortnite",
+					"copy": "Offical site of the new game Fortnite by Epic Games."
+				},
+				{
+					"type": "project-detail",
+					"url": "https://www.fortnite.com/",
+					"date": {
+						"start": "April 2013",
+						"finish": "May 2013"
+					},
+					"mediums": [ "Web" , "Development" , "Digital" ],
+					"employer": {
+						"name": "Soap Creative",
+						"url": "http://soapcreative.com/"
+					},
+					"client": {
+						"name": "Epic Games",
+						"url": "http://epicgames.com/"
+					},
+					"team": [
+						{
+							"name": "George Huber",
+							"url": "http://www.digitallyblue.com/"
+						},
+						{
+							"name": "Mike Chang",
+							"url": "http://soapcreative.com/"
+						},
+						{
+							"name": "Dave Weir",
+							"url": "http://www.weiry.com/"
+						},
+						{
+							"name": "Hilary Khteian",
+							"url": "http://www.weiry.com/"
+						}
+					]
+				},
+				{
+					"type": "image-card",
+					"src": "/images/fortnite-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/fortnite-2.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/fortnite-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/fortnite-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/fortnite-5.jpg"
+				}
+			]
+		},
+		{
+			"title": "Wolverine",
+			"slug": "#/wolverine",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Wolverine: Unleashed",
+					"copy": "Promotional site for the Bluray release of The Wolverine."
+				},
+				{
+					"type": "image-card",
+					"src": "/images/wolverine-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/wolverine-2.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/wolverine-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/wolverine-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/wolverine-5.jpg"
+				}
+			]
+		},
+		{
+			"title": "8MBA",
+			"slug": "#/8mba",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "8MBA",
+					"copy": "Study of and traditional print branding for the Eight Mile Boulevard Association."
+				},
+				{
+					"type": "project-detail",
+					"date": {
+						"start": "September 2012",
+						"finish": "November 2012"
+					},
+					"mediums": [ "Branding" , "Print" ],
+					"client": {
+						"name": "Eight Mile Boulevard Association",
+						"url": "http://www.eightmile.org/"
+					},
+					"team": [{
+						"name": "Karen Timmermann",
+						"url": "http://www.karentimmermann.com/"
+					}]
+				},
+				{
+					"type": "text-card",
+					"copy": "<span>The Eight Mile Boulevard Association was a sponsored branding project undertaken at CCS that I worked on with <a href='http://www.karentimmermann.com/'>Karen Timmermann</a>.<br /><br /> The project began with initial research into Eight Mile, types of technology/information systems that related to the boulevard, and several client presentations. Over the course of a semester, the team I worked with developed a new identity system for 8MBA that included a custom typeface with 7 weights (one of which was a dingbat weight that produced the unique signage) and all of the printed material you see here as well as a brand guidelines book.</span>"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/8mba-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/8mba-2.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/8mba-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/8mba-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/8mba-5.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/8mba-6.jpg"
+				}
+			]
+		},
+		{
+			"title": "Bar Sans",
+			"slug": "#/bar-sans",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Bar Sans",
+					"copy": "A nice, cold, refreshing typeface."
+				},
+				{
+					"type": "project-detail",
+					"url": "http://alexberg.in/gimmiebarsans",
+					"date": {
+						"start": "September 2012",
+						"finish": "November 2012"
+					},
+					"mediums": [ "Type" , "Digital" , "Print" ]
+				},
+				{
+					"type": "text-card",
+					"copy": "<span>Bar Sans was originally made for my Eight Mile project, complete with two other regular weights and a signage dingbat weight that could create a different sign using glyphs. It was inspired by all of the old hand made signage found along Eight Mile boulevard.</span>"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-2.gif"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-5.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-6.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-7.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bar-sans-8.jpg"
+				}
+			]
+		},
+		{
+			"title": "Little Things Labs",
+			"slug": "#/little-things-labs",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Little<br />Things Labs",
+					"copy": "A website for some really awesome folks."
+				},
+				{
+					"type": "project-detail",
+					"url": "http://reallybigthings.org/",
+					"date": {
+						"start": "April 2013",
+						"finish": "May 2013"
+					},
+					"mediums": [ "Web" , "Branding" , "Digital" ],
+					"employer": {
+						"name": "Little Things Labs",
+						"url": "http://www.reallybigthings.org/"
+					},
+					"client": {
+						"name": "Little Things Labs",
+						"url": "http://www.reallybigthings.org/"
+					},
+					"team": []
+				},
+				{
+					"type": "text-card",
+					"copy": "<span><a href='http://www.reallybigthings.org'>Little Things Labs</a> is a small organization based out of <strike>Detroit</strike> Chattinooga that identifies and acts on pressing issues and emerging opportunities in mid sized post industrial cities. This is their portfolio site.</span>"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/little-things-labs-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/little-things-labs-2.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/little-things-labs-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/little-things-labs-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/little-things-labs-5.jpg"
+				}
+			]
+		},
+		{
+			"title": "Bandwidth",
+			"slug": "#/bandwidth",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Bandwidth",
+					"copy": "An in depth analysis of my typical bandwidth usage in college."
+				},
+				{
+					"type": "project-detail",
+					"date": {
+						"start": "October 2012",
+						"finish": "November 2012"
+					},
+					"mediums": [ "Print" , "Information" ]
+				},
+				{
+					"type": "text-card",
+					"copy": "<span>I tracked my data consumption through my computer over the course of 3 days and developed infographics to convey that information in the simplest manner possible in 8 graphs. The final piece was printed onto 11x22\" transparency.</span>"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-1.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-2.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-3.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-4.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-5.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-6.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-7.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-8.jpg"
+				},
+				{
+					"type": "image-card",
+					"src": "/images/bandwidth-9.jpg"
+				}
+			]
+		},
+		{
+			"title": "books",
+			"slug": "#/books",
+			"pages": [
+				{
+					"type": "text-card",
+					"headline": "Books",
+					"copy": "Good old fashioned printed materials."
+				}
+			]
+		}
+	]
+}

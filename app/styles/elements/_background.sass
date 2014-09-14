@@ -1,0 +1,10 @@
+canvas
+	@include backface-visibility( hidden )
+	position: fixed
+	bottom: 0
+	right: 0
+	left: 0
+	top: 0
+
+	@media screen and ( max-width: $mobile )
+		@include backface-visibility( auto )

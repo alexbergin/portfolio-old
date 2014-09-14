@@ -1,0 +1,56 @@
+aside
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: $black
+	background-size: contain
+	background-position: center center
+	background-repeat: no-repeat
+	@include translate( 100% , 0 )
+	-webkit-transition: -webkit-transform 0.4s cubic-bezier(.46,.01,.2,1)
+	-moz-transition: -moz-transform 0.4s cubic-bezier(.46,.01,.2,1)
+	-ms-transition: -ms-transform 0.4s cubic-bezier(.46,.01,.2,1)
+	-o-transition: -o-transform 0.4s cubic-bezier(.46,.01,.2,1)
+	transition: transform 0.4s cubic-bezier(.46,.01,.2,1)
+	z-index: 5
+	display: block
+
+	.close
+		position: fixed
+		display: inline-block
+		@include backface-visibility( hidden )
+		cursor: pointer
+		width: 40px
+		height: 40px
+		border: 3px solid $white
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		border-radius: 50%
+		pointer-events: auto
+		top: 10px
+		right: 10px
+
+		&:before , &:after
+			content: ""
+			background-color: $white
+			position: absolute
+			width: 20px
+			height: 3px
+			top: 50%
+			left: 50%
+			bottom: auto
+			right: auto
+			margin-left: -10px
+			margin-top: -1px
+
+		&:before
+			box-shadow: 0 0 0 $white
+			@include rotate( 135deg )
+
+		&:after
+			@include rotate( 225deg )
+
+	&.open
+		@include translate( 0 , 0 )

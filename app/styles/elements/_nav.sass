@@ -1,0 +1,227 @@
+nav
+	position: fixed
+	width: 0
+	height: 0
+	overflow: visible
+	top: 0
+	left: 0
+	z-index: 4
+	pointer-events: none
+
+	a
+		position: fixed
+		display: inline-block
+		width: 40px
+		height: 40px
+		border: 3px solid $black
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		border-radius: 50%
+		pointer-events: auto
+		@include transition( all 0.25s cubic-bezier(.46,.01,.2,1.51))
+
+		&[href="null"]
+			pointer-events: none
+
+		&.up , &.down , &.left , &.right
+			&:before
+				content: ""
+				border-bottom: 8px solid $black
+				border-right: 6px solid transparent
+				border-left: 6px solid transparent
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -4px
+				margin-left: -6px
+				@include transform-origin( 50% , 60% )
+
+		&.menu
+			top: 10px
+			left: 10px
+			right: auto
+			bottom: auto
+			cursor: pointer
+			@include backface-visibility( hidden )
+
+			@media screen and ( max-width: $mobile )
+				top: auto
+				left: auto
+				bottom: 10px
+				right: 10px
+
+			&:before , &:after
+				content: ""
+				@include transition( all 0.25s cubic-bezier(.46,.01,.2,1.51))
+				background-color: $black
+				position: absolute
+				width: 20px
+				height: 3px
+				top: 50%
+				left: 50%
+				bottom: auto
+				right: auto
+				margin-left: -10px
+				margin-top: -1px
+
+			&:before
+				@include translate( 0 , -6px )
+				box-shadow: 0 6px 0 $black
+
+			&:after
+				@include translate( 0 , 6px )
+
+		&.up
+			margin-left: -20px
+			top: 10px
+			left: 50%
+
+			&[href="null"]
+				@include transform( translate( 0 , -100px ) scale( 0 ))
+
+			&:before
+				@include rotate( 0deg )
+
+		&.down
+			margin-left: -20px
+			bottom: 10px
+			left: 50%
+
+			&[href="null"]
+				@include transform( translate( 0 , 100px ) scale( 0 ))
+
+			&:before
+				@include rotate( 180deg )
+
+		&.left
+			margin-top: -20px
+			left: 10px
+			top: 50%
+
+			&[href="null"]
+				@include transform( translate( -100px , 0 ) scale( 0 ))
+
+			&:before
+				@include rotate( -90deg )
+
+		&.right
+			margin-top: -20px
+			right: 10px
+			top: 50%
+
+			&[href="null"]
+				@include transform( translate( 100px , 0 ) scale( 0 ))
+
+			&:before
+				@include rotate( 90deg )
+
+$menu-width: 450px
+
+menu
+	z-index: 3
+	position: fixed
+	@include transition( all 0.4s cubic-bezier(.46,.01,.2,1) , background 0s linear )
+	@include translate( -100% , 0 )
+	top: 0
+	left: 0
+	width: $menu-width
+	height: 100%
+	background-color: $white
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	padding: 60px
+	text-align: left
+	overflow-x: hidden
+
+	@media screen and ( max-width: $mobile )
+		width: 100%
+
+	h1 , hr , ul
+		max-width: 600px
+		text-align: left
+		display: block
+		margin: 0
+		left: 50%
+		@include translate( -50% , 0 )
+		position: relative
+
+
+	&.red
+		background-color: $red
+
+	&.green
+		background-color: $green
+
+	&.blue
+		background-color: $blue
+
+	&.yellow
+		background-color: $yellow
+
+	h1
+		text-align: left
+		text-transform: uppercase
+		display: inline-block
+		font-size: 32px
+		letter-spacing: 6px
+		font-family: "regular"
+		line-height: 36px
+		display: block
+
+	hr
+		border: none
+		border-top: 3px solid $black
+		margin: 20px 0 30px 0
+
+	a
+		text-decoration: none
+		font-family: inherit
+		color: inherit
+
+	.content
+		position: relative
+		max-height: 100%
+		width: 100%
+		top: 50%
+		left: 0
+		@include transition( all 0.5s cubic-bezier(.46,.01,.2,1.35))
+		@include translate( -20% , -50% )
+		padding: 60px 0 100px 0
+
+article
+	@include translate( 0 , 0 )
+	@include transition( all 0.4s cubic-bezier(.46,.01,.2,1))
+
+body.menu-open
+	nav
+		.menu
+			&:before
+				box-shadow: 0 0 0 $black
+				@include rotate( 135deg )
+
+			&:after
+				@include rotate( 225deg )
+
+		.up
+			@include transform( translate( 0 , -100px ) scale( 0 ))
+
+		.down
+			@include transform( translate( 0 , 100px ) scale( 0 ))
+
+		.left
+			@include transform( translate( -100px , 0 ) scale( 0 ))
+
+		.right
+			@include transform( translate( 100px , 0 ) scale( 0 ))
+	
+	menu
+		@include translate( 0 , 0 )
+
+		.content
+			@include translate( 0 , -50% )
+
+	article
+		@include translate( $menu-width , 0 )
+		@media screen and ( max-width: $mobile )
+			@include translate( 100% , 0 )
+

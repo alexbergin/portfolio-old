@@ -1,0 +1,179 @@
+section.project-detail
+	
+	.center
+		position: absolute
+		top: 50%
+		left: 0
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		padding: 60px
+		@include translate( 0 , -50% )
+		max-height: 100%
+		width: 100%
+		overflow-x: hidden
+
+		ul
+			border: 3px solid $black
+			display: inline-block
+			left: 50%
+			position: relative
+			@include translate( -50% , 0 )
+			max-width: 600px
+
+			@media screen and ( max-width: $mobile )
+				min-width: 100%
+
+			li
+				display: block
+				border-bottom: 3px solid $black
+				position: relative
+
+				label
+					text-transform: uppercase
+					font-family: "regular"
+					font-size: 15px
+					letter-spacing: 4px
+					position: relative
+					padding: 20px 15px 15px 15px
+					top: 0
+					left: 0
+					display: block
+
+				h2
+					display: inline-block
+					padding: 15px
+					font-size: 30px
+					font-family: "regular"
+					letter-spacing: 5px
+
+				a
+					text-decoration: none
+					color: inherit
+
+				&.link
+					a
+						display: block
+						padding: 15px 15px 15px 40px
+						font-family: "regular-italic"
+						font-size: 12px
+						line-height: 12px
+						letter-spacing: 3px
+
+						&:before , &:after
+							content: ""
+							position: absolute
+							top: 50%
+							left: 15px
+
+						&:before
+							background-color: $black
+							width: 9px
+							height: 3px
+							@include translate( 0 , -50% )
+
+						&:after
+							@include transform-origin( top , right )
+							@include rotate( 45deg )
+							border-top: 3px solid $black
+							border-right: 3px solid $black
+							width: 8px
+							height: 8px
+							margin-left: 2px
+
+
+				&.medium , &.team
+					h2
+						font-size: 12px
+						letter-spacing: 3px
+						display: inline-block
+						padding: 15px
+						border: 3px solid $black
+						margin-left: -3px
+						margin-bottom: -3px
+						font-family: "regular-italic"
+
+						@media screen and ( max-width: $mobile / 1.5 )
+							margin-left: 0
+							border: none
+							padding-top: 0
+							padding-right: 0
+
+				&.medium h2:last-of-type , &.team a:last-of-type h2
+					margin-right: -3px
+
+				&:last-of-type
+					border-bottom: none
+
+			.date
+
+				.start , .finish , p
+					display: inline-block
+
+				p
+					font-family: "regular-italic"
+					font-size: 12px
+					line-height: 12px
+					letter-spacing: 3px
+					position: relative
+					@include translate( 0 , 50% )
+					width: 40px
+					padding-left: 15px
+					display: block
+
+			.double
+				border: 3px solid $black
+				white-space: nowrap
+				margin: -3px
+				position: relative
+				display: block
+				width: 100%
+
+				li
+					border: none
+					font-size: 0
+					display: inline-block
+					white-space: normal
+					position: static
+					top: 0
+					padding-top: 45px
+
+					label
+						position: absolute
+
+					&.client
+						border-right: 3px solid $black
+						margin-right: -3px
+
+					&.employer
+						border-left: 3px solid $black
+
+					&.client , &.employer
+						box-sizing: border-box
+						-moz-box-sizing: border-box
+						width: 50%
+
+						&.full
+							width: 100%
+							border-right: none
+							border-left: none
+
+					@media screen and ( max-width: $mobile )
+
+						&.employer , &.client
+							border: none
+							margin: 0
+							display: block
+							width: 100%
+							padding-top: 0
+
+						label
+							position: static
+							top: 0
+							left: 0
+
+				.client + .employer 
+					label
+						left: 50%
+
+					@media screen and ( max-width: $mobile )
+						border-top: 3px solid $black

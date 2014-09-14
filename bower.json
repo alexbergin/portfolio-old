@@ -1,0 +1,13 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.0.0",
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "jquery": "~2.1.0",
+    "requirejs-plugins": "~1.0.2",
+    "requirejs-text": "~2.0.10",
+    "classlist": "~2013.5.14",
+    "requestAnimationFrame": "~0.0.20",
+    "jquery-touchswipe": "~1.6.6"
+  }
+}

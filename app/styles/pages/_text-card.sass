@@ -1,0 +1,97 @@
+section.text-card
+
+	.center
+		width: 100%
+		padding: 60px
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		position: absolute
+		overflow-x: hidden
+		@include translate( 0 , -50% )
+		max-height: 100%
+		text-align: center
+		top: 50%
+		left: 0
+
+		@media screen and ( max-width: $mobile )
+			text-align: left
+
+		strike
+			text-decoration: none
+			display: inline-block
+			position: relative
+
+			&:before
+				content: ""
+				top: 50%
+				@include translate( -5px , -100% )
+				height: 3px
+				width: 100%
+				padding: 0 5px
+				position: absolute
+				background-color: $black
+
+		h1
+			font-family: "bold"
+			font-size: 90px
+			line-height: 100px
+			letter-spacing: 10px
+			text-transform: uppercase
+			max-width: 900px
+			left: 50%
+			@include translate( -50% , 0 )
+			position: relative
+
+			@media screen and ( max-width: $mobile )
+				left: 0
+				@include translate( 0 , 0 )
+				font-size: 35px
+				line-height: 40px
+				letter-spacing: 4px
+				max-width: 400px
+		p
+			margin-top: 30px
+			font-family: "regular"
+			font-size: 20px
+			line-height: 36px
+			letter-spacing: 2px
+			max-width: 600px
+			display: block
+			position: relative
+			left: 50%
+			@include translate( -50% , 0 )
+
+			@media screen and ( max-width: $mobile )
+				left: 0
+				@include translate( 0 , 0 )
+				margin-top: 15px
+				font-size: 14px
+				line-height: 25px
+				letter-spacing: 1px
+				max-width: 300px
+
+			span
+				display: block
+				text-align: left
+				width: 100%
+
+		a
+			text-decoration: none
+			padding: 8px 6px 5px 6px
+			border-top: 3px solid $black
+			border-bottom: 3px solid $black
+			box-sizing: border-box
+			-moz-box-sizing: border-box
+			color: inherit
+			box-shadow: 3px 0 0 $black , -3px 0 0 $black
+			margin: 0 4px 0 0
+
+			@media screen and ( max-width: $mobile )
+				box-shadow: 2px 0 0 $black , -2px 0 0 $black
+				border-top: 2px solid $black
+				border-bottom: 2px solid $black
+				padding: 6px 4px 3px 4px
+
+			&:hover
+				background-color: $black
+				color: white
